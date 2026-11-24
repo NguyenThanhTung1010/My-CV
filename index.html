@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!-- lang="vi" khai báo ngôn ngữ trang → hỗ trợ screen reader & SEO -->
+<html lang="vi">
+
+<head>
+  <!-- ========== METADATA BẮT BUỘC ========== -->
+  <meta charset="UTF-8" />
+  <!-- viewport: nền tảng của responsive mobile-first, khóa tỉ lệ 1:1 với thiết bị -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio CV của Nguyễn Văn An – Frontend Developer. Dự án, kỹ năng và thông tin liên hệ." />
+  <meta name="author" content="Nguyễn Văn An" />
+  <title>Nguyễn Thanh Tùng · Frontend Developer</title>
+
+  <!-- Liên kết tới file CSS tách rời (yêu cầu của bài) -->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ========================================================== -->
+  <!-- HEADER: nhận diện + điều hướng chính                        -->
+  <!-- ========================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Thương hiệu cá nhân -->
+      <a class="brand" href="#top" aria-label="Về đầu trang">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-name">Nguyễn Thanh Tùng</span>
+      </a>
+
+      <!-- NAV dùng Flexbox (xem styles.css) -->
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#skills">Kỹ năng</a></li>
+          <li><a href="#projects">Dự án</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========================================================== -->
+  <!-- MAIN: toàn bộ nội dung chính của trang                      -->
+  <!-- ========================================================== -->
+  <main id="top">
+    <!-- ----- SECTION: Giới thiệu / Hero ----- -->
+    <section id="about" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Xin chào, tôi là</p>
+          <h1 class="hero-title">Nguyễn Thanh Tùng</h1>
+          <p class="hero-role">Frontend Developer &amp; UI Enthusiast</p>
+          <p class="hero-desc">
+            Tôi xây dựng giao diện web sạch sẽ, dễ tiếp cận và responsive.
+            Tốt nghiệp ngành Công nghệ thông tin, yêu thích HTML/CSS ngữ nghĩa
+            và trải nghiệm người dùng tối giản.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Xem dự án</a>
+            <a class="btn btn-outline" href="#contact">Liên hệ tôi</a>
+          </div>
+        </div>
+
+        <!-- Ảnh đại diện: dùng placeholder, thay bằng ảnh thật của bạn -->
+        <figure class="hero-avatar">
+          <img
+            src="assets/img/0d248ab3f0aa118fe72af13f070c583a.jpg"
+            alt="Ảnh đại diện của Nguyễn Thành Tùng"
+            width="320" height="320" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Kỹ năng ----- -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Kỹ năng</h2>
+        <p class="section-sub">Những công nghệ và kỹ năng tôi sử dụng thường xuyên.</p>
+
+        <ul class="skill-grid">
+          <li class="skill-chip">HTML5</li>
+          <li class="skill-chip">CSS3 / Flexbox / Grid</li>
+          <li class="skill-chip">JavaScript (ES6+)</li>
+          <li class="skill-chip">Responsive Design</li>
+          <li class="skill-chip">Git &amp; GitHub</li>
+          <li class="skill-chip">Figma / Wireframe</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Dự án (danh sách thẻ dùng CSS Grid) ----- -->
+    <section id="projects" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">Dự án tiêu biểu</h2>
+        <p class="section-sub">Một vài sản phẩm tôi đã thực hiện.</p>
+
+        <!-- .project-grid dùng CSS Grid (xem styles.css) -->
+        <div class="project-grid">
+
+          <!-- Mỗi thẻ là một <article> độc lập, có thể đứng riêng -->
+          <article class="card">
+            <img class="card-media"
+            src="assets/img/1.jpg"
+            alt="Ảnh minh họa dự án Landing Page" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ảnh cute1</h3>
+              <p class="card-desc">
+                Hình ảnh cute 1.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Grid</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+            src="assets/img/2.jpg"
+            alt="Ảnh minh họa dự án Todo App" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ảnh cute 2</h3>
+              <p class="card-desc">
+                Hình ảnh cute 2.
+              </p>
+              <ul class="tag-list">
+                <li>JavaScript</li>
+                <li>Flexbox</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+            src="assets/img/3 (2).jpg"
+            alt="Ảnh minh họa dự án Weather Dashboard" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ảnh cute 3</h3>
+              <p class="card-desc">
+                Hình ảnh cute 3.
+              </p>
+              <ul class="tag-list">
+                <li>API</li>
+                <li>Grid</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img class="card-media"
+            src="assets/img/3.jpg"
+            alt="Ảnh minh họa dự án Blog cá nhân" width="600" height="360" />
+            <div class="card-body">
+              <h3 class="card-title">Ảnh cute 4</h3>
+              <p class="card-desc">
+                Hình ảnh cute 4.
+              </p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <a class="card-link" href="#">Xem chi tiết →</a>
+            </div>
+          </article>
+
+        </div><!-- /.project-grid -->
+      </div>
+    </section>
+
+    <!-- ----- SECTION: Liên hệ ----- -->
+    <section id="contact" class="section">
+      <div class="container">
+
+        <h2 class="section-title">Liên hệ với tôi</h2>
+        <p class="section-sub">Điền thông tin bên dưới — tôi sẽ phản hồi sớm nhất có thể! 👋</p>
+
+        <div class="contact-inner">
+
+          <!-- Thông tin liên hệ của chủ trang -->
+          <div class="contact-cta">
+            <p class="contact-cta-desc">
+              Tôi đang tìm kiếm cơ hội thực tập &amp; việc làm Frontend Developer.
+              Hãy liên hệ nếu bạn muốn hợp tác hoặc chỉ đơn giản là chào hỏi!
+            </p>
+            <ul class="contact-list">
+              <li>
+                <a class="contact-card" href="mailto:nguyenthanhtung36@gmail.com" aria-label="Gửi email">
+                  <span class="contact-icon" aria-hidden="true">✉</span>
+                  <span class="contact-info">
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">nguyenthanhtung36@gmail.com</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-card" href="https://github.com/nguyenthanhtung" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <span class="contact-icon" aria-hidden="true">🐙</span>
+                  <span class="contact-info">
+                    <span class="contact-label">GitHub</span>
+                    <span class="contact-value">github.com/nguyenthanhtung</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-card" href="https://linkedin.com/in/nguyenthanhtung" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <span class="contact-icon" aria-hidden="true">💼</span>
+                  <span class="contact-info">
+                    <span class="contact-label">LinkedIn</span>
+                    <span class="contact-value">linkedin.com/in/nguyenthanhtung</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-card" href="tel:+84xxxxxxxxxx" aria-label="Điện thoại">
+                  <span class="contact-icon" aria-hidden="true">📱</span>
+                  <span class="contact-info">
+                    <span class="contact-label">Điện thoại</span>
+                    <span class="contact-value">+84 xxx xxx xxx</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Form để người xem điền thông tin gửi đến chủ trang -->
+          <form
+            class="contact-form"
+            action="mailto:nguyenthanhtung36@gmail.com"
+            method="get"
+            enctype="text/plain"
+            aria-label="Form liên hệ"
+          >
+            <div class="form-group">
+              <label class="form-label" for="cf-name">Họ và tên <span aria-hidden="true">*</span></label>
+              <input
+                class="form-input"
+                type="text"
+                id="cf-name"
+                name="Họ và tên"
+                placeholder="Nguyễn Văn A"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-email">Email của bạn <span aria-hidden="true">*</span></label>
+              <input
+                class="form-input"
+                type="email"
+                id="cf-email"
+                name="Email"
+                placeholder="email@example.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-subject">Tiêu đề</label>
+              <input
+                class="form-input"
+                type="text"
+                id="cf-subject"
+                name="Tiêu đề"
+                placeholder="Hợp tác / Thực tập / Chào hỏi…"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="cf-message">Nội dung tin nhắn <span aria-hidden="true">*</span></label>
+              <textarea
+                class="form-input form-textarea"
+                id="cf-message"
+                name="Nội dung"
+                placeholder="Viết lời nhắn của bạn tại đây…"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn btn-primary form-submit" type="submit">
+              ✉ Gửi tin nhắn
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================== -->
+  <!-- FOOTER                                                      -->
+  <!-- ========================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nguyễn Thanh Tùng Thiết kế &amp; xây dựng bằng HTML5 + CSS3.</p>
+      <a href="#top" class="to-top">↑ Lên đầu trang</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
